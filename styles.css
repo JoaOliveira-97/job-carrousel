@@ -1,0 +1,72 @@
+.containerOne {
+    font-family: arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    width: 80%;
+}
+
+.sectionOne {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionTwo{
+    display: flex;
+    height: 10%;
+    justify-content: center;
+}
+
+.details {
+    opacity: 0;
+    visibility: hidden;
+    background-color: transparent;
+    height: 0px;
+    margin: 5px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transition: opacity 0.3s ease, background-color 0.3s ease height 0.4s ease;
+}
+
+.job:hover .details {
+    opacity: 1;
+    visibility: visible;
+    height: 140px;
+    background-color: bisque;
+    border-radius: 10px;
+    transition: display 0.3s, background-color 1s, height 0.4s, border-radius 0.3s;
+}
+
+.jobOne, .jobTwo, .jobThree {
+    align-content: center;
+    text-align: center;
+    flex-grow: 1;
+    border-radius: 20px;
+    background-color: bisque;
+    margin: 5px;
+}
+
+.jobOne:hover, .jobTwo:hover, .jobThree:hover {
+    flex-grow: 3;
+    border-radius: 15px;
+    background-color: rgb(233, 166, 85);
+    transition: flex-grow 0.3s, border-radius 0.3s, background-color 0.3s;
+}
+
+button {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: lightgrey;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(233, 166, 85)
+}
